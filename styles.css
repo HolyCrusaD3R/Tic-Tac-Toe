@@ -1,0 +1,88 @@
+:root{
+    --dark: #4e4f4e;
+    --darker: #3e3e3e;
+    --grey: #686968;
+    --lighter: #c7c7c7;
+    --light: #adaaaa;
+    --cyan: #4795bf;
+    --dangerous-red: #db2a44;
+    --green: #03fc0f;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--darker);
+}
+
+#display {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 1rem;
+    background-color: var(--dark);
+}
+
+header, .winner {
+    margin: auto auto auto 1rem;
+}
+
+#box {
+    margin: auto auto 1rem auto;
+}
+
+header h1, .winner {
+    color: var(--lighter);
+}
+
+header h3 {
+    color: var(--light);
+}
+
+#box {
+    position: relative;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    width: 90%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15vh 15vh 15vh;
+}
+
+.button {
+    text-align: center;
+    line-height: 1vm;
+    font-size: 12vh;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+    cursor: pointer;
+    user-select: none;
+}
+
+.winner_display {
+    display: flex;
+    justify-content: space-around;
+}
+
+.winner {
+    font-size: 4rem;
+}
+
+.reset_button {
+    margin-top: 1rem;
+    margin-right: 2rem;
+    background-color: var(--green);
+    border-radius: 15%;
+    height: 2rem;
+    width: 3.5rem;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.reset_button:hover{
+    opacity: 0.8;
+}
